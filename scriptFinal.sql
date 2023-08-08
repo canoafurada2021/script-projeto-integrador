@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `login` (
   `tipo_usuario` ENUM('cliente', 'vendedor') NOT NULL, 
   PRIMARY KEY (`id`),
   UNIQUE KEY `unique_usuario` (`cpf`)
-);
+);oi
 
 
 -- -----------------------------------------------------
