@@ -34,7 +34,6 @@ CREATE TABLE IF NOT EXISTS `empresa` (
 
 
 
-
 -- -----------------------------------------------------
 -- Table .`vendedores`
 -- -----------------------------------------------------
@@ -136,13 +135,20 @@ CREATE TABLE IF NOT EXISTS `veiculo`(
 );
 
 
+-- INSERTSSSSSSSSSSSSS
+-- -------------------------------
 
--- inserts patricia
+-- SELECT P LISTAGEM
+
+-- INSERT TESSTE DE EMPRESA PRE CADASTRADA ------------------------------------------------------
+-- -------------------------------------------------------------------------------------------------
+insert into empresa (razaosocial, telefone, cnpj, nomefantasia, porteEmpresa) values ('O objetivo da empresa é deixar as pessoas felizes andando de gol', '+55 47 992178827', '12.345.678/0001-99', 'Pope Francis Master', 'grande');
+-- ------------------------------------------------------------------------------------------------------
+
+-- inserts ENDERECOS
  insert into enderecos (cep, id, rua, bairro, cidade, estado) values ('95560', '1', 'PO Box 26708', '9th Floor', 'PO Box 59776', '7th Floor');
  insert into enderecos (cep, id, rua, bairro, cidade, estado) values ('95590', '2', 'PO Box 74593', 'Suite 85', 'Apt 359', 'Room 630');
 insert into enderecos (cep, id, rua, bairro, cidade, estado) values ('9899', '3', 'Apt 1550', 'Apt 1844', 'Suite 82', 'Suite 87');
-
-
 
 
 insert into categorias (idcategorias, categoria) values ('1', 'felis');
@@ -151,7 +157,7 @@ insert into categorias (idcategorias, categoria) values ('23', 'in lectus');
 insert into categorias (idcategorias, categoria) values ('24', 'sapien ');
 insert into categorias (idcategorias, categoria) values ('25', 'semper');
 
--- inserts emily alves -- corrigidos
+-- inserts FORNECEDORES
 
 
  insert into fornecedores (cnpj,  enderecos_id, nome, telefone) values (82, 1, 'João',  34244624); 
@@ -163,7 +169,7 @@ insert into categorias (idcategorias, categoria) values ('25', 'semper');
  
  
  
--- inserts andri
+-- inserts VENDEDOR/LOCADOR
  insert into vendedores (idVendedores, salario, nome, sobrenome) values (1, 2574.89, 'Garreth', 'Espinoy'  );
 insert into vendedores (idVendedores, salario, nome, sobrenome) values (2, 1883.12, 'Jess', 'McMichan' );
  insert into vendedores (idVendedores, salario, nome, sobrenome  ) values (3,1883.16,'José','carols');
